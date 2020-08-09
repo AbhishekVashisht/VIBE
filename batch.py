@@ -1,6 +1,6 @@
 import os
 import subprocess
-from subprocess izsmport call
+from subprocess import call
 all_vid_path=[]
 Root_dir="./mp4"
 Root_classes=os.listdir(Root_dir)
