@@ -36,7 +36,7 @@ def run_openpose(
     display = 2 if vis else 0
     cmd = [
         'build/examples/openpose/openpose.bin',
-        '--model_pose', 'BODY_21A',
+        '--model_pose', 'BODY_25',
         '--tracking', '1',
         '--render_pose', str(render),
         '--video', video_file,
@@ -78,7 +78,7 @@ def read_posetrack_keypoints(output_folder):
     return people
 
 
-def run_posetracker(video_file, staf_folder, posetrack_output_folder='/tmp', display=False):
+def run_posetracker(video_file, staf_folder, posetrack_output_folder='/content/VIBE/opp', display=False):
     posetrack_output_folder = os.path.join(
         posetrack_output_folder,
         f'{os.path.basename(video_file)}_posetrack'
